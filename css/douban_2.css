@@ -1,0 +1,414 @@
+#quanbu {
+    width: 55%;
+    height: 1480px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: #fff;
+    display: none;
+    transition: display 10s;
+}
+
+#pull {
+    position: fixed;
+    top: 0px;
+    left: 650px;
+    height: 100%;
+    width: 25px;
+    box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    z-index: 88;
+    cursor: pointer;
+}
+
+#zhankai {
+    position: fixed;
+    top: 262px;
+    left: 656px;
+    height: 100px;
+    width: 15px;
+    line-height: 10px;
+    background-color: #e5e6e6;
+    cursor: pointer;
+}
+
+#zhankai span {
+    position: relative;
+    top: 45px;
+    left: 5px;
+    z-index: 100;
+}
+
+#pull:hover #zhankai {
+    background-color: #9dd6c5;
+}
+
+#head {
+    position: absolute;
+    top: 72px;
+    left: 50px;
+}
+
+#wenzi {
+    height: 30px;
+    line-height: 30px;
+    color: #a2a8ac;
+    font-size: 30px;
+}
+
+#head input {
+    position: absolute;
+    top: 2px;
+    left: 275px;
+    height: 30px;
+    width: 240px;
+    border: 1px solid #e1e8e6;
+    background: #fff;
+}
+
+#head img {
+    position: absolute;
+    top: 9px;
+    left: 493px;
+}
+
+#tuwall {
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    background: #eff5f2;
+    color: #636564;
+    width: 100%;
+    height: 275px;
+}
+
+#fenlie {
+    position: absolute;
+    top: 471px;
+    left: 21px;
+    height: 56px;
+    width: 554px;
+}
+
+#fenlie li {
+    font-size: 12px;
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+    color: #888;
+    line-height: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#fenlie li:hover {
+    color: #9dd6c5;
+}
+
+#hot {
+    position: absolute;
+    left: 54px;
+    top: 553px;
+    width: 70%;
+    height: 366px;
+}
+
+#hot li {
+    float: left;
+    width: 50%;
+}
+
+.ge {
+    color: #888;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.xiang {
+    color: #888;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.yuan {
+    border-radius: 45px;
+}
+
+.yin {
+    /*position: relative;
+	left:-53px;
+    top: 0px;*/
+    display: none;
+}
+.shadow{
+    position: absolute;
+    top: 44px;
+    /*left: 40px;*/
+}
+.shadow1{
+    position: absolute;
+    top: 152px;
+}
+.shadow2{
+    position: absolute;
+    top: 259px;
+}
+.shadow3{
+    position: absolute;
+    top: 44px;
+}
+.shadow4{
+    position: absolute;
+    top: 152px;
+}
+.shadow5{
+    position: absolute;
+    top: 260px;
+}
+.shadow6{
+    position: absolute;
+    top: 44px;
+}
+.dian {
+    /*position: relative;
+	left:-106px;
+    top: 0px;*/
+    display: none;
+}
+
+.xiang:hover {
+    color: #9dd6c5;
+}
+
+.neirong {
+    position: relative;
+    top: -66px;
+    left: 53px;
+    width: 135px;
+}
+
+.neirong h4 {
+    height: 0px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+#up {
+    position: absolute;
+    left: 54px;
+    top: 921px;
+    width: 70%;
+    height: 366px;
+}
+
+#up li {
+    float: left;
+    width: 50%;
+}
+
+#pai {
+    position: absolute;
+    left: 54px;
+    top: 1289px;
+    width: 70%;
+    height: 115px;
+}
+
+#pai li {
+    float: left;
+    width: 50%;
+}
+
+.title {
+    font-size: 13px;
+    color: #888;
+    font-weight: normal;
+}
+
+.datu {
+    position: absolute;
+    display: none;
+}
+
+#tuhao {
+    position: absolute;
+    left: 280px;
+    top: 181px;
+}
+
+#tuhao li {
+    color: #888;
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 16px;
+    background: #D4E1DC;
+    text-align: center;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.lie {
+    width: 300px;
+    height: 130px;
+    position: absolute;
+    left: 321px;
+    top: 249px;
+    display: none;
+}
+
+.cla {
+    color: #636564;
+    font-size: 18px;
+    cursor: pointer;
+}
+.jj_span{
+    font-size: 13px;
+}
+#jjdiv {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+     display: none;
+    top: 74px;
+    left: 88px;
+    z-index: 3;
+}
+
+#jjdiv1 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+     display: none;
+    top: 74px;
+    left: 310px;
+    z-index: 3;
+}
+#jjdiv2 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 178px;
+    left: 88px;
+    z-index: 3;
+}
+#jjdiv3 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 178px;
+    left: 310px;
+    z-index: 3;
+}
+#jjdiv4 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 290px;
+    left: 88px;
+    z-index: 3;
+}
+#jjdiv5 {
+     width: 214px;
+     height: 56px;
+     border: 1px solid gray;
+     position: absolute;
+     background-color: #fff;
+     display: none;
+     top: 290px;
+     left: 310px;
+     z-index: 3;
+ }
+#jjdiv6 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 71px;
+    left: 88px;
+    z-index: 3;
+}
+#jjdiv7 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 71px;
+    left: 310px;
+    z-index: 3;
+}
+#jjdiv8 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 181px;
+    left: 88px;
+    z-index: 3;
+}
+#jjdiv9 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 180px;
+    left: 310px;
+    z-index: 3;
+}
+#jj_div {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 288px;
+    left: 88px;
+    z-index: 3;
+}
+#jj_div1 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 288px;
+    left: 310px;
+    z-index: 3;
+}
+#jj_div2 {
+    width: 214px;
+    height: 56px;
+    border: 1px solid gray;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    top: 72px;
+    left: 88px;
+    z-index: 3;
+}

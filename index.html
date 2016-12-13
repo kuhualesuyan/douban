@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓣</title>
+    <link rel="stylesheet" href="css/douban_1.css">
+    <link rel="stylesheet" href="css/douban_2.css">
+    <script type="text/javascript" src='js/jquery-3.0.0.min.js'></script>
+    <script src="js/FM.js" defer></script>
+</head>
+<body>
+
+<div id="one_all">
+    <div id="opacity"></div>
+    <div id="btn_left"></div>
+    <div id="one">
+        <div id="logo">
+            <img src="img/1.jpg" id="doubanfm">
+        </div>
+        <div id="nav">
+            <ul>
+                <a href="#">
+                    <li class="nav"id="dl">登录</li>
+                </a>
+                <li class="nav">|</li>
+                <a href="#">
+                    <li class="nav" id="zc">马上注册</li>
+                </a>
+                <li class="nav">|</li>
+                <a href="#">
+                    <li class="nav">开启<span style="font-size:10px;background-color:#EAE5D4;color:#8F7435">PRO</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div id="back"></div>
+        <div id="player">
+            <div id="poster">
+                <img src="img/2.jpg" class="picture">
+            </div>
+            <a href="#">
+                <div id="album"></div>
+                <span id="chakan">查看专辑信息</span>
+            </a>
+            <div id="music">
+                <span id="jixu">继续收听></span>
+                <div id="ting">
+                    <img src="img/37.jpg" id="ting1">
+                    <img src="img/36.jpg" id="ting2">
+                </div>
+                <audio id="audio" autoplay="autoplay" class="mp3" style=" position:absolute;left:0px;top:-33px;">
+                    <source src="music/SOBER.mp3">
+                </audio>
+                <div id="xiliename">Made Series</div>
+                <div id="zhujiname">
+                    < A>2016
+                </div>
+                <div id="jindutiao">
+                    <a href="#" id="song">Bigbang SOBER</a>
+                    <input type="text" id="dice" class="tiao">
+                    <input type="text" id="jice" class="tiao">
+                </div>
+                <div id="xstime"></div>
+                <div id="volum">
+                    <img src="img/45.jpg" id="yinliang">
+                    <input type="text" id="youse">
+                    <input type="text" id="kongbai">
+                </div>
+                <div id="xihau">
+                    <img src="img/38.jpg" class="xin1" id="heixin">
+                    <img src="img/39.jpg" class="xin2" id="huixin" style=" display: none; ">
+                    <img src="img/40.jpg" class="xin1" id="hongxin1" style=" display: none; ">
+                    <img src="img/46.jpg" class="xin2" id="hongxin2" style=" display: none; ">
+                </div>
+                <div id="laji">
+                    <img src="img/41.jpg" id="tong1">
+                    <img src="img/42.jpg" id="tong2">
+                </div>
+                <div id="xiayiqu">
+                    <img src="img/43.jpg" id="xiayi1">
+                    <img src="img/44.jpg" id="xiayi2">
+                </div>
+                <div id="continue"></div>
+            </div>
+        </div>
+        <div id="phone">
+            <a href="#"><img src="img/6.jpg"><span>发送歌曲到手机</span></a>
+        </div>
+        <div>
+            <button id="same"><img src="img/7.jpg" id="yinfu">听相似的歌</button>
+        </div>
+        <div id="share">
+            <span id="fenxiang">分享这首歌</span>
+            <div id="duan">
+                <span><img src="img/9.jpg"></span>
+                <span><img src="img/11.jpg"></span>
+                <span><img src="img/10.jpg"></span>
+            </div>
+        </div>
+        <div>
+            <button id="load"><img src="img/8.jpg"><span>4.0来了！来下载吧</span></button>
+        </div>
+        <div id="pull1">
+            <div id="zhankai1"><span>></span></div>
+        </div>
+        <div id="banquan">
+            <span>© 2016 douban<a href="#">京ICP备11027288号</a>网络视听许可证0110418号 京公网安备110105012274 </span>
+        <span>广告合作: <a href="#">adfm@douban.com </a>|<a href="#">FM游乐场</a> | <a
+                href="#">FM用户手册 </a>|</span>
+            <br>
+            <a href="#">豆瓣FM中心</a>
+        </div>
+    </div>
+<!--登录-->
+    <div id="denglu">
+        <p>登录</p>
+        <div id="shuru">
+            <p>邮箱 / 用户名</p>
+            <input type="text" id="inputa" autofocus/>
+        </div>
+        <div id="shuruone">
+            <p>密码</p>
+            <input type="text" id="inputb" autofocus/>
+        </div>
+        <div id="shurutwo">
+            <p>验证码</p>
+            <input type="text" id="inputc" autofocus/>
+            <!--<img src="img/2016-10-06_144433.jpg"/>-->
+        </div>
+        <div id="jizhumima">
+            <input type="checkbox" id=""/><p>下次自动登录</p>
+            <a href="">忘记密码?</a>
+        </div>
+        <div id="dengluniu">
+            <p>登录</p>
+        </div>
+        <div id="dengluyouce">
+            <p>用其他帐号登录:</p>
+            <div>
+                <a href="">新浪微博 </a> <a href=""><b>QQ</b></a>  <a href=""><b>MSN</b></a>
+            </div>
+            <div id="nonezhang">
+                <p>没有豆瓣FM账户?</p>
+            </div>
+            <div>
+                <div>
+                    <a href="">立即注册</a>
+                </div>
+            </div>
+            <img src="img/2016-10-06_160727.jpg" id="guanbione"/>
+        </div>
+    </div>
+
+    <!--注册-->
+    <div id="dengluer">
+        <p>新用户注册</p>
+        <div id="shuruer">
+            <p>用户名</p>
+            <input type="text" id="inputaa" placeholder="由英文和数字组成" autofocus/>
+        </div>
+        <div id="shuruonea">
+            <p>密码</p>
+            <input type="text" id="inputbb" placeholder="包含英文和数字，最少8位" autofocus/>
+        </div>
+        <div id="shuruthreea">
+            <p>重复密码</p>
+            <input type="text" id="inputdd" autofocus/>
+        </div>
+        <div id="shurutwoa">
+            <p>验证码</p>
+            <input type="text" id="inputcc" autofocus/>
+        </div>
+        <div id="jizhumimaa">
+            <input type="checkbox"/><p>阅读并同意《使用协议》</p>
+            <a href="">忘记密码?</a>
+        </div>
+        <div id="dengluniua">
+            <p>完成注册</p>
+        </div>
+        <div id="dengluyoucea">
+            <p>用其他帐号登录:</p>
+            <div>
+                <a href="">新浪微博 </a> <a href=""><b>QQ</b></a>  <a href=""><b>MSN</b></a>
+            </div>
+            <div id="nonezhanga">
+                <p>已经有豆瓣FM账户?</p>
+            </div>
+            <div>
+                <div>
+                    <a href="">现在登录</a>
+                </div>
+            </div>
+            <img src="img/2016-10-06_160727.jpg" id="guanbizhuce"/>
+        </div>
+    </div>
+</div>
+
+
+<div id="two">
+    <div id="two_in">
+        <div id="zhaohe">
+            <ul>
+                <li class="zh" onclick="cl(0)">
+                    <a><span>我的私人兆赫</span></a>
+                    <span><img src="img/4.jpg" class="playing"></span>
+                </li>
+                <li class="zh" onclick="cl(1)">
+                    <a><span>我的红心兆赫</span></a>
+                    <span><img src="img/4.jpg" class="playing"></span>
+                </li>
+                <li class="zh" onclick="cl(2)">
+                    <a><span>豆瓣精选兆赫</span></a>
+                    <span><img src="img/4.jpg" class="playing"></span>
+                </li>
+            </ul>
+        </div>
+        <div id="history">
+            <span style="color:#888; font-size:12px">最近收听</span>
+            <hr class="hr">
+        </div>
+        <div id="try">
+            <span style="color:#888; font-size:12px">试试这些</span>
+            <hr class="hr">
+            <div id="try-list">
+                <ul>
+                    <li class="zh" onclick="cl(3);c(0)">
+                        <a><span>Sugar 系 MHz</span></a>
+                        <span><img src="img/4.jpg" class="playing"><img src="img/5.jpg" class="star"></span>
+                    </li>
+                    <li class="zh" onclick="cl(4);c(1)">
+                        <a><span>Luv Letter 系 MHz</span></a>
+                        <span><img src="img/4.jpg" class="playing"><img src="img/5.jpg" class="star"></span>
+                    </li>
+                    <li class="zh" onclick="cl(5);c(2)">
+                        <a><span>思念是一种病 系 MHz</span></a>
+                        <span><img src="img/4.jpg" class="playing"><img src="img/5.jpg" class="star"></span>
+                    </li>
+                    <li class="zh" onclick="cl(6);c(3)">
+                        <a><span>Someone Like You 系 MHz</span></a>
+                        <span><img src="img/4.jpg" class="playing">
+                            <img src="img/5.jpg" class="star"></span>
+                    </li>
+                    <li class="zh" onclick="cl(7);c(4)">
+                        <a><span>Luv Letter 系 MHz</span></a>
+                        <span><img src="img/4.jpg" class="playing"><img src="img/5.jpg" class="star"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="AD">
+    <div id="guanggao">
+        <a href="#"><img src="img/12.jpg"></a>
+    </div>
+</div>
+<div id="quanbu">
+    <div id="head">
+        <span id="wenzi">全部兆赫</span>
+        <input type="test" placeholder="搜索兆赫">
+        <a href="#"><img src="img/13.jpg"></a>
+    </div>
+    <div id="tu">
+        <div id="tuwall">
+            <img src="img/14.jpg" class="datu" style=" display: block; ">
+            <img src="img/15.jpg" class="datu">
+            <img src="img/16.jpg" class="datu">
+            <img src="img/17.jpg" class="datu">
+            <img src="img/18.jpg" class="datu">
+            <img src="img/19.png" class="datu">
+        </div>
+        <div id="tuhao">
+            <ul type="none">
+                <li class="num" style=" background-color: #9dd6c5" onmouseover="djxs(0)">1</li>
+                <li class="num" onmouseover="djxs(1)">2</li>
+                <li class="num" onmouseover="djxs(2)">3</li>
+                <li class="num" onmouseover="djxs(3)">4</li>
+                <li class="num" onmouseover="djxs(4)">5</li>
+                <li class="num" onmouseover="djxs(5)">6</li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function djxs(n) {
+                var arr = document.getElementsByClassName("datu");
+                arr[0].style.display = "none";
+                arr[1].style.display = "none";
+                arr[2].style.display = "none";
+                arr[3].style.display = "none";
+                arr[4].style.display = "none";
+                arr[5].style.display = "none";
+                arr[n].style.display = "block";
+                var ar = document.getElementsByClassName("num");
+                ar[0].style.backgroundColor = "#D4E1DC";
+                ar[1].style.backgroundColor = "#D4E1DC";
+                ar[2].style.backgroundColor = "#D4E1DC";
+                ar[3].style.backgroundColor = "#D4E1DC";
+                ar[4].style.backgroundColor = "#D4E1DC";
+                ar[5].style.backgroundColor = "#D4E1DC";
+                ar[n].style.backgroundColor = "#9dd6c5";
+                var a = document.getElementsByClassName("lie");
+                a[0].style.display = "none";
+                a[1].style.display = "none";
+                a[2].style.display = "none";
+                a[3].style.display = "none";
+                a[4].style.display = "none";
+                a[5].style.display = "none";
+                a[n].style.display = "block";
+            }
+        </script>
+        <div id="lie1" class="lie" style=" display: block; ">
+            <span class="cla">轻音乐 MHz</span>
+            <p class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche</p>
+            <span class="ge">100首歌曲</span>
+            <a href="#" class="xiang">兆赫详情</a>
+        </div>
+        <div id="lie2" class="lie">
+            <span class="cla">电子 MHz</span>
+            <p class="ge">小心，有电，注意，节拍</p>
+            <p class="ge">热门歌曲：Djadje / No Job No Money / Esa noche</p>
+            <span class="ge">108首歌曲</span>
+            <a href="#" class="xiang">兆赫详情</a>
+        </div>
+        <div id="lie3" class="lie">
+            <span class="cla">雷鬼 MHz</span>
+            <p class="ge">热门歌曲：Djadje / No Work No Job / Esa noche</p>
+            <span class="ge">180首歌曲</span>
+            <a href="#" class="xiang">兆赫详情</a>
+        </div>
+        <div id="lie4" class="lie">
+            <span class="cla">R&B MHz</span>
+            <p class="ge">热门歌曲： No Work No Job No Money / Esa noche</p>
+            <span class="ge">240首歌曲</span>
+            <a href="#" class="xiang">兆赫详情</a>
+        </div>
+        <div id="lie5" class="lie">
+            <span class="cla">动漫音乐 MHz</span>
+            <p class="ge">热门歌曲：Djadje / No Work No Job No Money /a noche</p>
+            <span class="ge">100首歌曲</span>
+            <a href="#" class="xiang">兆赫详情</a>
+        </div>
+        <div id="lie6" class="lie">
+            <span class="cla">世界音乐 MHz</span>
+            <p class="ge">热门歌曲：Djadje / No Work No Job No Money / Esa noche / abc</p>
+            <span class="ge">200首歌曲</span>
+            <a href="#" class="xiang">兆赫详情</a>
+        </div>
+    </div>
+    <div id="pull">
+        <div id="zhankai"><span>></span></div>
+    </div>
+    <div id="fenlie">
+        <ul type="none">
+            <li>摇滚</li>
+            <li>古典</li>
+            <li>爵士</li>
+            <li>民谣/乡村</li>
+            <li>流行</li>
+            <li>电子</li>
+            <li>原声配乐</li>
+            <li>轻音乐</li>
+            <li>说唱</li>
+            <li>雷鬼</li>
+            <li>拉丁</li>
+            <li>世界音乐</li>
+            <li>布鲁斯</li>
+            <li>放克/灵歌/R&amp;B</li>
+        </ul>
+    </div>
+    <div id="hot">
+        <h3 class="title">热门兆赫</h3>
+        <ul type="none">
+            <li>
+                <div>
+                    <img src="img/20.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv" class="jianjie">
+                <b id="jjdivb">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b id="jjdivb1">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/21.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv1"class="jianjie">
+                <b id="jj_b">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b id="jj_b1">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/22.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow1">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv2"class="jianjie">
+                <b id="jj_b2">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b id="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/23.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow1">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv3"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/24.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow2">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv4"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/25.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow2">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv5"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+        </ul>
+    </div>
+    <div id="up">
+        <h3 class="title">上升最快</h3>
+        <ul type="none">
+            <li>
+                <div>
+                    <img src="img/26.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow3">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv6"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/27.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow3">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv7"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/28.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow4">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv8"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/29.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow4">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jjdiv9"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/30.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow5">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jj_div"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+            <li>
+                <div>
+                    <img src="img/31.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow5">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jj_div1"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+        </ul>
+    </div>
+    <div id="pai">
+        <h3 class="title">品牌兆赫</h3>
+        <ul type="none">
+            <li>
+                <div>
+                    <img src="img/32.jpg" class="yuan">
+                    <img src="img/33.jpg" class="yin shadow6">
+                    <img src="img/34.jpg" class="dian">
+                    <div class="neirong">
+                        <h4>运动 Mhz</h4>
+                        <div>
+                            <span class="ge">100首歌曲</span>
+                            <a href="#" class="xiang">兆赫详情</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div id="jj_div2"class="jianjie">
+                <b class="jj_b3">简介：</b>
+                <span class="jj_span">每天发现一首好听的歌</span>
+                <hr style="border: 1px dotted #999;position: relative;top: 0;">
+                <b class="jj_b3">热门歌曲：</b>
+                <span class="jj_span">难念的经/外面的世界</span>
+            </div>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
