@@ -1,34 +1,38 @@
-body{
+body {
     padding: 0;
     margin: 0;
     height: 700px;
 }
-#one_all{
+
+#one_all {
     position: relative;
     width: 100%;
     height: 700px;
 }
 
-#btn_left{
-    position:absolute;
+#btn_left {
+    position: absolute;
     width: 3%;
     /*background-color: red;*/
     height: 700px;
     left: 0;
 }
-#one{
-    position:absolute;
+
+#one {
+    position: absolute;
     width: 97%;
     /*background-color: blue;*/
     height: 717px;
     float: right;
     left: 3%;
 }
-#logo img{
+
+#logo img {
     position: absolute;
     left: 20%;
     top: 4%;
 }
+
 #nav {
     position: absolute;
     right: 96px;
@@ -52,6 +56,7 @@ body{
 #nav a:hover .nav {
     color: #000;
 }
+
 #back {
     position: absolute;
     left: -25px;
@@ -60,6 +65,7 @@ body{
     width: 1215px;
     height: 275px;
 }
+
 #player {
     position: absolute;
     left: 573px;
@@ -129,6 +135,7 @@ body{
     display: none;
     cursor: pointer;
 }
+
 .tiao {
     position: absolute;
     left: 23px;
@@ -136,6 +143,7 @@ body{
     height: 0px;
     border: none;
 }
+
 #jixu {
     position: absolute;
     top: 110px;
@@ -304,6 +312,7 @@ body{
     top: 100px;
     left: 145px;
 }
+
 #phone {
     position: absolute;
     left: 579px;
@@ -326,6 +335,7 @@ body{
 #phone a {
     text-decoration: none;
 }
+
 #same {
     position: absolute;
     left: 965px;
@@ -345,6 +355,7 @@ body{
     color: #e1e8e5;
     background-color: #9cd6c5;
 }
+
 #share {
     position: absolute;
     width: 170px;
@@ -407,6 +418,7 @@ body{
     position: absolute;
     top: -3px;
 }
+
 #pull1 {
     position: absolute;
     top: 0px;
@@ -419,7 +431,7 @@ body{
 }
 
 #zhankai1 {
-    position:absolute;
+    position: absolute;
     top: 262px;
     left: 10px;
     height: 100px;
@@ -439,6 +451,7 @@ body{
 #pull1:hover #zhankai1 {
     background-color: #9dd6c5;
 }
+
 #guanggao {
     position: fixed;
     left: 154px;
@@ -452,6 +465,7 @@ body{
     position: relative;
     top: 15px;
 }
+
 #banquan {
     position: absolute;
     left: 255px;
@@ -466,6 +480,7 @@ body{
     color: #999;
     text-decoration: none;
 }
+
 #zhaohe {
     position: absolute;
     left: -27px;
@@ -497,6 +512,7 @@ body{
     top: 15px;
     display: none;
 }
+
 #history {
     position: absolute;
     left: 13px;
@@ -511,6 +527,7 @@ body{
     left: 49px;
     top: -15px;
 }
+
 #try {
     position: absolute;
     left: 13px;
@@ -549,7 +566,8 @@ body{
     top: 0px;
     display: none;
 }
-#two{
+
+#two {
     position: relative;
     top: -590px;
     width: 985px;
@@ -557,18 +575,20 @@ body{
     right: -243px;
     overflow: hidden;
 }
-#two_in{
+
+#two_in {
     overflow-x: hidden;
-    overflow-y:scroll ;
+    overflow-y: scroll;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: 2;
     /*background-color: blue;*/
     width: 1001px;
     height: 389px;
 }
-#opacity{
+
+#opacity {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -579,7 +599,8 @@ body{
     opacity: 0.8;
     display: none;
 }
-#denglu{
+
+#denglu {
     position: fixed;
     top: 175px;
     left: 351px;
@@ -590,10 +611,12 @@ body{
     box-shadow: #C7C7C7 0px 0px 20px;
     display: none;
 }
-#denglu a{
+
+#denglu a {
     text-decoration: none;
 }
-#denglu p{
+
+#denglu p {
     position: absolute;
     top: 26px;
     left: 40px;
@@ -601,7 +624,8 @@ body{
     color: #333333;
     font-weight: 500;
 }
-#shuru{
+
+#shuru {
     position: absolute;
     top: 80px;
     left: 40px;
@@ -611,14 +635,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shuru p{
+
+#shuru p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#inputa{
+
+#inputa {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -629,9 +655,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#shuruone{
+
+#shuruone {
     position: absolute;
     top: 127px;
     left: 40px;
@@ -641,14 +668,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shuruone p{
+
+#shuruone p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#inputb{
+
+#inputb {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -659,9 +688,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#shurutwo{
+
+#shurutwo {
     position: absolute;
     top: 176px;
     left: 40px;
@@ -671,14 +701,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shurutwo p{
+
+#shurutwo p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#shurutwo img{
+
+#shurutwo img {
     position: absolute;
     top: 0px;
     left: 152px;
@@ -686,7 +718,8 @@ body{
     letter-spacing: -1px;
     cursor: pointer;
 }
-#inputc{
+
+#inputc {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -697,9 +730,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#dengluyouce{
+
+#dengluyouce {
     position: fixed;
     top: 175px;
     left: 767px;
@@ -708,41 +742,48 @@ body{
     background-color: #5A5A5A;
     z-index: 10;
 }
-#dengluyouce div{
+
+#dengluyouce div {
     position: absolute;
     top: 58px;
     left: 26px;
 }
-#dengluyouce p{
+
+#dengluyouce p {
     position: absolute;
     top: 25px;
     left: 26px;
     color: #AAAAAA;
     font-size: 10px;
 }
-#nonezhang p{
+
+#nonezhang p {
     position: absolute;
     top: 202px;
     left: 0px;
     width: 90px;
 }
-#dengluyouce div a{
+
+#dengluyouce div a {
     color: #8FBEB0;
     font-size: 10px;
 }
-#jizhumima input{
+
+#jizhumima input {
     position: absolute;
     top: 230px;
     left: 36px;
 }
-#jizhumima p{
+
+#jizhumima p {
     position: absolute;
     top: 220px;
     left: 55px;
     color: #888888;
     font-size: 10px;
 }
-#jizhumima a{
+
+#jizhumima a {
     position: absolute;
     top: 233px;
     left: 268px;
@@ -750,7 +791,8 @@ body{
     cursor: pointer;
     font-size: 10px;
 }
-#dengluniu{
+
+#dengluniu {
     position: absolute;
     top: 267px;
     left: 215px;
@@ -760,7 +802,8 @@ body{
     cursor: pointer;
     border-radius: 4px;
 }
-#dengluniu p{
+
+#dengluniu p {
     position: absolute;
     top: -6px;
     left: 40px;
@@ -769,14 +812,17 @@ body{
     font-weight: 500;
     cursor: pointer;
 }
-#dengluniu:hover{
+
+#dengluniu:hover {
     background-color: #BAE2D6;
 }
-#dengluniu:hover p{
+
+#dengluniu:hover p {
     color: #5A5A5A;
     background-color: #BAE2D6;
 }
-#dengluyouce div div{
+
+#dengluyouce div div {
     position: absolute;
     top: 236px;
     left: 1px;
@@ -784,24 +830,28 @@ body{
     height: 30px;
     border: 1px solid #666666;
 }
-#dengluyouce div div a{
+
+#dengluyouce div div a {
     position: absolute;
     top: 7px;
     left: 38px;
     font-size: 15px;
     color: #FFFFFF;
 }
-#dengluyouce:hover div div{
+
+#dengluyouce:hover div div {
     background-color: #666666;
 }
-#dengluyouce img{
+
+#dengluyouce img {
     position: absolute;
     top: 0px;
     left: 159px;
     cursor: pointer;
 }
+
 /*注册*/
-#dengluer{
+#dengluer {
     position: fixed;
     top: 124px;
     left: 371px;
@@ -812,10 +862,12 @@ body{
     box-shadow: #C7C7C7 0px 0px 20px;
     display: none;
 }
-#dengluer a{
+
+#dengluer a {
     text-decoration: none;
 }
-#dengluer p{
+
+#dengluer p {
     position: absolute;
     top: 26px;
     left: 40px;
@@ -823,7 +875,8 @@ body{
     color: #333333;
     font-weight: 500;
 }
-#shuruer{
+
+#shuruer {
     position: absolute;
     top: 80px;
     left: 40px;
@@ -833,14 +886,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shuruer p{
+
+#shuruer p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#inputaa{
+
+#inputaa {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -851,9 +906,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#shuruonea{
+
+#shuruonea {
     position: absolute;
     top: 127px;
     left: 40px;
@@ -863,14 +919,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shuruonea p{
+
+#shuruonea p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#inputbb{
+
+#inputbb {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -881,9 +939,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#shuruthreea{
+
+#shuruthreea {
     position: absolute;
     top: 175px;
     left: 40px;
@@ -893,14 +952,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shuruthreea p{
+
+#shuruthreea p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#inputdd{
+
+#inputdd {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -911,9 +972,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#shurutwoa{
+
+#shurutwoa {
     position: absolute;
     top: 223px;
     left: 40px;
@@ -923,14 +985,16 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
 }
-#shurutwoa p{
+
+#shurutwoa p {
     position: absolute;
     top: -2px;
     left: 9px;
     font-size: 10px;
     letter-spacing: -1px;
 }
-#shurutwoa img{
+
+#shurutwoa img {
     position: absolute;
     top: 0px;
     left: 152px;
@@ -938,7 +1002,8 @@ body{
     letter-spacing: -1px;
     cursor: pointer;
 }
-#inputcc{
+
+#inputcc {
     position: absolute;
     top: 0px;
     left: 92px;
@@ -949,9 +1014,10 @@ body{
     font-weight: 500;
     background-color: #EEF1F0;
     border: 0px solid #EEF1F0;
-    outline:medium;
+    outline: medium;
 }
-#dengluyoucea{
+
+#dengluyoucea {
     position: fixed;
     top: 124px;
     left: 767px;
@@ -960,41 +1026,48 @@ body{
     background-color: #5A5A5A;
     z-index: 10;
 }
-#dengluyoucea div{
+
+#dengluyoucea div {
     position: absolute;
     top: 58px;
     left: 26px;
 }
-#dengluyoucea p{
+
+#dengluyoucea p {
     position: absolute;
     top: 25px;
     left: 26px;
     color: #AAAAAA;
     font-size: 10px;
 }
-#nonezhanga p{
+
+#nonezhanga p {
     position: absolute;
     top: 251px;
     left: 0px;
     width: 102px;
 }
-#dengluyoucea div a{
+
+#dengluyoucea div a {
     color: #8FBEB0;
     font-size: 10px;
 }
-#jizhumimaa input{
+
+#jizhumimaa input {
     position: absolute;
     top: 305px;
     left: 36px;
 }
-#jizhumimaa p{
+
+#jizhumimaa p {
     position: absolute;
     top: 295px;
     left: 55px;
     color: #888888;
     font-size: 10px;
 }
-#jizhumimaa a{
+
+#jizhumimaa a {
     position: absolute;
     top: 233px;
     left: 268px;
@@ -1002,7 +1075,8 @@ body{
     cursor: pointer;
     font-size: 10px;
 }
-#dengluniua{
+
+#dengluniua {
     position: absolute;
     top: 295px;
     left: 215px;
@@ -1012,7 +1086,8 @@ body{
     cursor: pointer;
     border-radius: 4px;
 }
-#dengluniua p{
+
+#dengluniua p {
     position: absolute;
     top: -6px;
     left: 24px;
@@ -1021,14 +1096,17 @@ body{
     font-weight: 500;
     cursor: pointer;
 }
-#dengluniua:hover{
+
+#dengluniua:hover {
     background-color: #BAE2D6;
 }
-#dengluniua:hover p{
+
+#dengluniua:hover p {
     color: #5A5A5A;
     background-color: #BAE2D6;
 }
-#dengluyoucea div div{
+
+#dengluyoucea div div {
     position: absolute;
     top: 277px;
     left: 1px;
@@ -1036,17 +1114,20 @@ body{
     height: 30px;
     border: 1px solid #666666;
 }
-#dengluyoucea div div a{
+
+#dengluyoucea div div a {
     position: absolute;
     top: 5px;
     left: 42px;
     font-size: 15px;
     color: #FFFFFF;
 }
-#dengluyoucea:hover div div{
+
+#dengluyoucea:hover div div {
     background-color: #666666;
 }
-#dengluyoucea img{
+
+#dengluyoucea img {
     position: absolute;
     top: 0px;
     left: 159px;

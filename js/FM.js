@@ -1,82 +1,47 @@
 (function () {
-  var time = 1;
-  var tim = 1;
-  var t = 1;
+  var time = 0;
   var kid;
-  var jsq;
-  var js;
+  var datu = document.getElementsByClassName("datu");
+  var lie = document.getElementsByClassName("lie");
+  var num = document.getElementsByClassName("num");
 
   function tuqieHua() {
-    var arr = document.getElementsByClassName("datu");
-    arr[0].style.display = "none";
-    arr[1].style.display = "none";
-    arr[2].style.display = "none";
-    arr[3].style.display = "none";
-    arr[4].style.display = "none";
-    arr[5].style.display = "none";
-    arr[time].style.display = "block";
+    for (var i = 0; i < datu.length; i++) {
+      datu[i].style.display = "none";
+      lie[i].style.display = "none";
+      num[i].style.backgroundColor = "#D4E1DC";
+    }
+    datu[time].style.display = "block";
+    lie[time].style.display = "block";
+    num[time].style.backgroundColor = "#9dd6c5";
     time = (time + 1) % 6;
   }
 
-  function wenziqieHua() {
-    var arr = document.getElementsByClassName("lie");
-    arr[0].style.display = "none";
-    arr[1].style.display = "none";
-    arr[2].style.display = "none";
-    arr[3].style.display = "none";
-    arr[4].style.display = "none";
-    arr[5].style.display = "none";
-    arr[tim].style.display = "block";
-    tim = (tim + 1) % 6;
-  }
-
-  function numqieHua() {
-    var arr = document.getElementsByClassName("num");
-    arr[0].style.backgroundColor = "#D4E1DC";
-    arr[1].style.backgroundColor = "#D4E1DC";
-    arr[2].style.backgroundColor = "#D4E1DC";
-    arr[3].style.backgroundColor = "#D4E1DC";
-    arr[4].style.backgroundColor = "#D4E1DC";
-    arr[5].style.backgroundColor = "#D4E1DC";
-    arr[t].style.backgroundColor = "#9dd6c5";
-    t = (t + 1) % 6;
-  }
-
-  onload = function () {
+  onload = function() {
     kid = window.setInterval(tuqieHua, 2000);
-    jsq = window.setInterval(wenziqieHua, 2000);
-    js = window.setInterval(numqieHua, 2000);
-    if (true) {
-    } else {
-    }
   }
   var tu = document.getElementById('tu');
   tu.onmouseover = function over() {
     window.clearInterval(kid);
-    window.clearInterval(jsq);
-    window.clearInterval(js);
   }
   tu.onmouseout = function out() {
     kid = window.setInterval(tuqieHua, 2000);
-    jsq = window.setInterval(wenziqieHua, 2000);
-    js = window.setInterval(numqieHua, 2000);
   }
 
-  /*var zhankai = document.getElementById("zhankai");
-   var quanbu = document.getElementById("quanbu");
-   var banquan = document.getElementById("banquan");
-   zhankai.onclick = function() {
-   quanbu.style.display = "none";
-   banquan.style.display = "block";
-   //quanbu.transition="display 10s";
-   }
-   var zhankai1 = document.getElementById("zhankai1");
-   zhankai1.onclick = function() {
-   quanbu.style.display = "block";
-   banquan.style.display = "none";
-   quanbu.style.transitionProperty = "display";
-   quanbu.style.transitionDuration = "6s";
-   }*/
+  for (var i = 0; i < num.length; i++) {
+    (function(i){
+      num[i].onmouseover=function(){
+        for (var j = 0; j < datu.length; j++) {
+          datu[j].style.display = "none";
+          lie[j].style.display = "none";
+          num[j].style.backgroundColor = "#D4E1DC";
+        }
+        datu[i].style.display = "block";
+        lie[i].style.display = "block";
+        num[i].style.backgroundColor = "#9dd6c5";
+      }
+    })(i)
+  }
   $(document).ready(function () {
     $('#zhankai1').click(function () {
       $('#quanbu').show(1000);
@@ -106,14 +71,22 @@
   share.onmouseover = function () {
     fenxiang.style.left = '3px';
     duan.style.left = '1034px';
-    duan.style.display = "block";
+    //duan.style.display = "block";
   }
   share.onmouseout = function () {
     fenxiang.style.left = '72px';
     duan.style.left = '1104px';
-    duan.style.display = "none";
+    //duan.style.display = "none";
   }
-
+//  分享
+  $(document).ready(function(){
+    $("#fenxiang").mouseenter(function(){
+      $("#duan").show(1000);
+    })
+    $("#duan").mouseleave(function(){
+      $("#duan").hide(1000);
+    })
+  })
 
   var poster = document.getElementById("poster");
   var album = document.getElementById("album");
@@ -380,20 +353,22 @@
   var gbzc = document.getElementById("guanbizhuce");
   var dler = document.getElementById("dengluer");
   var zc = document.getElementById("zc");
-  dl.onclick = function(){
+  dl.onclick = function () {
     opacity.style.display = 'block';
     denglu.style.display = 'block';
   }
-  close.onclick = function(){
+  close.onclick = function () {
     denglu.style.display = 'none';
     opacity.style.display = 'none';
   }
-  zc.onclick = function(){
+  zc.onclick = function () {
     opacity.style.display = 'block';
     dler.style.display = 'block';
   }
-  gbzc.onclick = function(){
+  gbzc.onclick = function () {
     dler.style.display = 'none';
     opacity.style.display = 'none';
   }
+
+
 }(window))
